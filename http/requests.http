@@ -1,0 +1,36 @@
+### GET wilders sans filtrage
+GET https://http-practice.herokuapp.com/wilders/
+
+### GET wilders page 2 et language php
+GET https://http-practice.herokuapp.com/wilders/?page=2&language=PHP
+
+### POST permettant de créer un wilder au format JSON
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/json
+
+{
+  "name": "Antho Maison",
+  "language": "JavaScript"
+}
+
+### POST permettant de créer un wilder au format URL-encoded
+POST  https://http-practice.herokuapp.com/wilders
+Content-Type: application/x-www-form-urlencoded
+
+name=Camille%20Dupond&language=PHP
+
+### Une requête permettant de lire un des wilders que tu as créés (GET)
+GET https://http-practice.herokuapp.com/wilders/1646240
+
+### Une requête permettant de mettre à jour un des wilders (PUT)
+PUT https://http-practice.herokuapp.com/wilders/1646240
+Content-Type: application/json
+
+{
+  "name": "Marlone Maison",
+  "language": "JavaScript"
+}
+
+### Une requête permettant d'effacer à jour un des wilders (DELETE)
+DELETE https://http-practice.herokuapp.com/wilders/1646240
+Content-Type: application/json

@@ -1,0 +1,1 @@
+Get-AppxPackage | Where-Object {$_.InstallLocation -notlike "*C:\Windows*"} | where-object {$_.name -notlike "*store*" -and $_.name -notlike "*VCLibs*" -and $_.name -notlike "*Native*" -and $_.name -notlike "*Advertising*"} | Remove-AppxPackage
