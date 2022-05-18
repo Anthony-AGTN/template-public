@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(226, 216, 204);
+}
+
+h1 {
+    color: rgb(0, 89, 255);
+    margin-top: 1em;
+}
+
+h2 {
+    color: rgb(144, 95, 201);
+    margin-top: 1em;
+}
+
+h4 {
+    color: rgb(255, 0, 0);
+}
